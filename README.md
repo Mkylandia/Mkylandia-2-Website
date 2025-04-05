@@ -1,73 +1,25 @@
-# Mkylandia 2 - Ostern Event Webseite
+#📢 #OsterEvent #auf #unserem #Server! Mkylandia2 #🎉 #Hoppla, #was #ist #denn #hier #los? #🐰🥚
 
-Dieses Projekt stellt eine moderne, responsive Webseite für den Ostern Event von Mkylandia 2 dar. Die Seite wurde mit HTML, CSS und JavaScript erstellt. Alle Texte können zentral in der JavaScript-Datei verwaltet werden, sodass du Inhalte einfach anpassen kannst, ohne den HTML-Code zu verändern.
+#Liebe #Community,
 
-## Inhalt
+#das #Osterfest #steht #vor #der #Tür #und #wir #haben #uns #etwas #Besonderes #für #euch #ausgedacht! #🐣 #Um #euren #Spielspaß #auf #ein #neues #Level #zu #heben, #haben #wir #einige #aufregende #Änderungen #vorgenommen:
 
-- [Voraussetzungen](#voraussetzungen)
-- [Installation](#installation)
-- [Dateistruktur](#dateistruktur)
-- [Anpassung der Inhalte](#anpassung-der-inhalte)
-- [Starten der Webseite](#starten-der-webseite)
-- [Lizenz](#lizenz)
+#✨ #OneBlock #wurde #aktualisiert!
+#Ja, #ihr #habt #richtig #gehört! #Der #legendäre #OneBlock-Modus #wurde #überarbeitet, #um #euch #noch #mehr #Herausforderungen #und #Überraschungen #zu #bieten. #Ob #neue #Blöcke, #versteckte #Schätze #oder #knifflige #Aufgaben – #taucht #ein #und #entdeckt, #was #sich #alles #verändert #hat!
 
-## Voraussetzungen
+#🌍 #Die #Map #wurde #neu #gestaltet!
+#Auch #die #Welt, #die #ihr #kennt, #hat #ein #neues #Gesicht #bekommen. #Wir #haben #die #Map #überarbeitet, #um #euch #ein #frisches, #österliches #Erlebnis #zu #bieten. #Erkundet #neue #Landschaften, #sucht #nach #versteckten #Eiern #und #lasst #euch #von #den #Osterdekorationen #verzaubern.
 
-- Ein moderner Webbrowser (Chrome, Firefox, Edge etc.)
-- Ein Code-Editor (z.B. Visual Studio Code) für Anpassungen am Code
-- (Optional) Ein lokaler Webserver, um die Seite im Browser zu testen (z.B. [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code)
+#💡 #Was #erwartet #euch #noch?
+#- #Oster-Challenges: #Sammelt #Eier, #löst #Rätsel #und #gewinnt #exklusive #Belohnungen!
+#- #Special #Events: #Nehmt #an #unseren #Osterevents #teil #und #sichert #euch #einzigartige #Preise.
+#- #Frühlingsstimmung: #Genießt #die #festliche #Atmosphäre #und #lasst #euch #vom #Osterhasen #überraschen.
 
-## Installation
+#🐰 #Wann #geht’s #los?
+#Das #Oster-Event #startet #ab #sofort #und #läuft #bis #zum #[Datum #einfügen]. #Also, #schnappt #euch #eure #Freunde, #macht #euch #bereit #und #taucht #ein #in #unsere #österliche #Welt!
 
-1. **Klonen oder herunterladen:**
-   - Klone das Repository oder lade den Quellcode herunter und entpacke ihn in einen Ordner.
+#Wir #freuen #uns #darauf, #mit #euch #zu #feiern #und #wünschen #euch #schon #jetzt #frohe #Ostern! #🥳
+#Euer #Server-Team #🐣
 
-2. **Ordner öffnen:**
-   - Öffne den Projektordner in deinem bevorzugten Code-Editor.
-
-## Dateistruktur
-
-Das Projekt enthält folgende Dateien:
-
-- **index.html**  
-  Enthält das HTML-Grundgerüst der Seite. Platzhalter-Elemente werden per JavaScript befüllt.
-
-- **styles.css**  
-  Beinhaltet alle CSS-Regeln für ein modernes und responsives Design. Ähnlich wie bei modernen Seiten wie Cytooxien.
-
-- **script.js**  
-  Verwaltet alle Texte und Inhalte zentral. Hier kannst du die Testtexte sowie alle Event-bezogenen Inhalte anpassen.
-
-- **README.md**  
-  Diese Datei mit Informationen zum Projekt.
-
-## Anpassung der Inhalte
-
-Alle Texte werden in der `script.js` definiert. Ändere einfach die Werte im `content`-Objekt, um die Texte auf deiner Webseite zu aktualisieren:
-
-```javascript
-const content = {
-  siteTitle: "Mkylandia 2",
-  siteTagline: "Hier kann ein Text stehen – Testtext für die Kopfzeile.",
-  heroTitle: "Frohe Ostern in Mkylandia 2!",
-  nav: {
-    event: "Event",
-    rules: "Regeln",
-    prizes: "Preise",
-    contact: "Kontakt"
-  },
-  sections: {
-    event: {
-      title: "Das Event",
-      boxes: [
-        {
-          title: "Ostereiersuche",
-          text: "Hier kann ein Text stehen: Finde die versteckten Eier und sammle Punkte!"
-        },
-        // Weitere Boxen...
-      ]
-    },
-    // Weitere Sektionen (rules, prizes, contact)...
-  }
-};
+#HappyEaster #OneBlock #MapUpdate #OsterEvent
 
