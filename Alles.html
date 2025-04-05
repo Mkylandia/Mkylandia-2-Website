@@ -4,263 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mkylandia 2 - Ostern Event</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Einbinden der CSS-Datei -->
+  <link rel="stylesheet" href="styles.css">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* Reset & Grundstil */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      background: #f5f7fa;
-      color: #333;
-    }
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-    /* Header */
-    header {
-      background: linear-gradient(135deg, #ff7e5f, #feb47b);
-      padding: 2rem 1rem;
-      text-align: center;
-      color: #fff;
-      position: relative;
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    /* Navigation */
-    nav {
-      background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav .nav-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    nav a {
-      font-weight: 600;
-      color: #333;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ff7e5f;
-    }
-    /* Hero Section */
-    .hero {
-      background: url('https://source.unsplash.com/1600x900/?easter') no-repeat center center/cover;
-      min-height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-    }
-    .hero h2 {
-      position: relative;
-      color: #fff;
-      font-size: 2.5rem;
-      z-index: 1;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    }
-    /* Container */
-    .container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 0.5rem;
-    }
-    section h2::after {
-      content: "";
-      position: absolute;
-      width: 50%;
-      height: 3px;
-      background: #ff7e5f;
-      left: 0;
-      bottom: 0;
-    }
-    /* Info-Boxen */
-    .grid {
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    }
-    .box {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    }
-    .box i {
-      font-size: 2.5rem;
-      color: #ff7e5f;
-      margin-bottom: 1rem;
-    }
-    .box h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .box p {
-      font-size: 1rem;
-      color: #666;
-    }
-    /* Footer */
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-    footer p {
-      font-size: 0.9rem;
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2.5rem;
-      }
-      .hero h2 {
-        font-size: 2rem;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1>Mkylandia 2</h1>
-    <p>Erlebe das ultimative Ostern Event in unserer fantastischen Welt!</p>
+    <h1 id="site-title"></h1>
+    <p id="site-tagline"></p>
   </header>
-  
+
   <nav>
     <div class="nav-container">
-      <a href="#event">Event</a>
-      <a href="#rules">Regeln</a>
-      <a href="#prizes">Preise</a>
-      <a href="#contact">Kontakt</a>
+      <a href="#event" id="nav-event"></a>
+      <a href="#rules" id="nav-rules"></a>
+      <a href="#prizes" id="nav-prizes"></a>
+      <a href="#contact" id="nav-contact"></a>
     </div>
   </nav>
 
-  <div class="hero">
-    <h2>Frohe Ostern in Mkylandia 2!</h2>
-  </div>
+  <section class="hero">
+    <h2 id="hero-title"></h2>
+  </section>
 
   <div class="container">
     <!-- Event-Beschreibung -->
     <section id="event">
-      <h2>Das Event</h2>
+      <h2 id="section-event-title"></h2>
       <div class="grid">
         <div class="box">
           <i class="fa-solid fa-egg"></i>
-          <h3>Ostereiersuche</h3>
-          <p>Finde die versteckten Eier in unserer Welt und sammle Punkte für exklusive Belohnungen!</p>
+          <h3 id="event-box1-title"></h3>
+          <p id="event-box1-text"></p>
         </div>
         <div class="box">
           <i class="fa-solid fa-gamepad"></i>
-          <h3>Minispiele</h3>
-          <p>Teste dein Geschick in speziell entworfenen Minispielen rund um das Thema Ostern.</p>
+          <h3 id="event-box2-title"></h3>
+          <p id="event-box2-text"></p>
         </div>
         <div class="box">
           <i class="fa-solid fa-trophy"></i>
-          <h3>Wettbewerbe</h3>
-          <p>Stelle dein Können unter Beweis und gewinne einzigartige Preise in spannenden Wettbewerben!</p>
+          <h3 id="event-box3-title"></h3>
+          <p id="event-box3-text"></p>
         </div>
       </div>
     </section>
 
     <!-- Event-Regeln -->
     <section id="rules">
-      <h2>Event Regeln</h2>
+      <h2 id="section-rules-title"></h2>
       <div class="grid">
         <div class="box">
           <i class="fa-solid fa-book"></i>
-          <h3>Teilnahmebedingungen</h3>
-          <p>Nur Spieler ab Level 5 können teilnehmen. Mehrfache Teilnahme am Tag ist möglich.</p>
+          <h3 id="rules-box1-title"></h3>
+          <p id="rules-box1-text"></p>
         </div>
         <div class="box">
           <i class="fa-solid fa-clock"></i>
-          <h3>Event-Zeiten</h3>
-          <p>Das Event findet vom 15.04. bis 20.04. statt – verpasse es nicht!</p>
+          <h3 id="rules-box2-title"></h3>
+          <p id="rules-box2-text"></p>
         </div>
         <div class="box">
           <i class="fa-solid fa-ban"></i>
-          <h3>Fairplay</h3>
-          <p>Cheating wird nicht toleriert. Spiele fair und genieße das Event in vollen Zügen.</p>
+          <h3 id="rules-box3-title"></h3>
+          <p id="rules-box3-text"></p>
         </div>
       </div>
     </section>
 
     <!-- Event Preise -->
     <section id="prizes">
-      <h2>Preise & Belohnungen</h2>
+      <h2 id="section-prizes-title"></h2>
       <div class="grid">
         <div class="box">
           <i class="fa-solid fa-gift"></i>
-          <h3>Exklusive Items</h3>
-          <p>Sichere dir einzigartige Items, die es nur während des Events gibt.</p>
+          <h3 id="prizes-box1-title"></h3>
+          <p id="prizes-box1-text"></p>
         </div>
         <div class="box">
           <i class="fa-solid fa-medal"></i>
-          <h3>Ranglistenpreise</h3>
-          <p>Die besten Spieler erhalten besondere Auszeichnungen und Preise!</p>
+          <h3 id="prizes-box2-title"></h3>
+          <p id="prizes-box2-text"></p>
         </div>
         <div class="box">
           <i class="fa-solid fa-star"></i>
-          <h3>Überraschungen</h3>
-          <p>Erlebe spontane Events und Spezialboni, die alle Teilnehmer belohnen.</p>
+          <h3 id="prizes-box3-title"></h3>
+          <p id="prizes-box3-text"></p>
         </div>
       </div>
     </section>
 
     <!-- Kontakt -->
     <section id="contact">
-      <h2>Kontakt & Infos</h2>
-      <p>Bei Fragen wende dich an unser Support-Team oder besuche unser <a href="https://www.mkylandia2.de/forum" target="_blank">Forum</a>.</p>
+      <h2 id="section-contact-title"></h2>
+      <p id="contact-text"></p>
     </section>
   </div>
 
   <footer>
     <p>&copy; 2025 Mkylandia 2. Alle Rechte vorbehalten.</p>
   </footer>
+
+  <!-- Einbinden der JavaScript-Datei -->
+  <script src="script.js"></script>
 </body>
 </html>
