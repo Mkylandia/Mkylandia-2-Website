@@ -1,0 +1,156 @@
+/* Basis-Reset und Grundstile */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a {
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ff7e5f;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?easter') no-repeat center center/cover;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero h2 {
+  position: relative;
+  color: #fff;
+  font-size: 2.5rem;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Container & Grid */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  margin-bottom: 3rem;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+section h2::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: #ff7e5f;
+  left: 0;
+  bottom: 0;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.box i {
+  font-size: 2.5rem;
+  color: #ff7e5f;
+  margin-bottom: 1rem;
+}
+.box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.box p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
